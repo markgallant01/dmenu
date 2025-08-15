@@ -9,7 +9,7 @@ static const float menu_height_ratio = 4.0f;  /* This is the ratio used in the o
 static const char *fonts[] = {
 	"Liberation Mono:size=10"
 };
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const char *prompt      = "";      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#bbbbbb", "#222222" },

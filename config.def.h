@@ -15,6 +15,7 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
 	[SchemeSel] = { "#eeeeee", "#005577" },
 	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemePlaceholder] = { "#444444", "#222222" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;

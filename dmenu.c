@@ -29,7 +29,7 @@
 #define OPAQUE                0xffu
 
 /* enums */
-enum { SchemeNorm, SchemeSel, SchemeOut, SchemePlaceholder, SchemeLast }; /* color schemes */
+enum { SchemeNorm, SchemeSel, SchemeOut, SchemePrompt, SchemeLast }; /* color schemes */
 
 struct item {
 	char *text;
@@ -167,7 +167,7 @@ drawmenu(void)
 
 	w = (lines > 0 || !matches) ? mw - x : inputw;
 	if (text[0] == '\0' && prompt && *prompt) {
-		drw_setscheme(drw, scheme[SchemePlaceholder]);
+		drw_setscheme(drw, scheme[SchemePrompt]);
 		drw_text(drw, x, 0, w, bh, lrpad / 2, prompt, 0);
 	} else {
 		drw_setscheme(drw, scheme[SchemeNorm]);
